@@ -1,0 +1,6 @@
+Write a professional, concise cover letter for the '{title}' position at '{company}'.
+Focus on my technical SEO skills and experience.
+
+Job link: {url}
+
+Keep it under 250 words, be targeted to the job requirements, and end with a call to action.
