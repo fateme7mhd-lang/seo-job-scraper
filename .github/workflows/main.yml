@@ -1,8 +1,0 @@
-name: Get Telegraph Token
-on: workflow_dispatch
-jobs:
-  get-token:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fetch Token
-        run: curl -s "https://api.telegra.ph/createAccount?short_name=SEOJobBot&author_name=SEO"
