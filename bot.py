@@ -88,30 +88,85 @@ MIN_FIT_SCORE    = 35
 MAX_JOB_AGE_DAYS = 7
 
 JSEARCH_QUERIES = {
-    1: ["junior Creative Strategist remote", "Social Media Specialist remote", "Content Marketing Specialist remote", "Community Manager remote"],
-    2: ["Social Media Manager remote", "Content Strategist remote", "Content Creator remote"],
-    3: ["junior Brand Strategist remote"],
+    1: [
+        "Content Strategist remote",
+        "Digital Content Strategist remote",
+        "Content Marketing Specialist remote",
+        "Content Marketing Manager remote"
+    ],
+
+    2: [
+        "Creative Strategist remote",
+        "Junior Creative Strategist remote",
+        "Creative Marketing Strategist remote",
+        "Campaign Strategist remote"
+    ],
+
+    3: [
+        "Brand Strategist remote",
+        "Junior Brand Strategist remote",
+        "Brand Marketing Specialist remote",
+        "Brand Marketing Manager remote"
+    ],
+
+    4: [
+        "Social Media Strategist remote",
+        "Community Marketing Manager remote",
+        "Audience Development Specialist remote",
+        "Communications Strategist remote"
+    ],
+
+    5: [
+        "Content Lead remote",
+        "Editorial Strategist remote",
+        "Storytelling Specialist remote",
+        "Thought Leadership Manager remote"
+    ]
 }
 
 _DEFAULT_SKILLS = [
-    "content creation",
-    "content marketing",
+    # Strategy
     "content strategy",
-    "social media",
-    "social media marketing",
-    "social media management",
-    "community management",
-    "brand strategy",
     "creative strategy",
-    "copywriting","storytelling",
-    "podcast production",
+    "brand strategy",
+    "marketing strategy",
+    "campaign strategy",
+
+    # Content
+    "content marketing",
     "content planning",
     "editorial planning",
+    "storytelling",
+    "copywriting",
+    "content creation",
+
+    # Audience & Brand
+    "audience research",
+    "customer insights",
+    "brand positioning",
+    "brand messaging",
+    "community building",
+
+    # Digital Marketing
+    "social media marketing",
     "digital marketing",
-    "instagram marketing",
+    "email marketing",
+    "seo",
+    "analytics",
+
+    # Tools
+    "google analytics",
+    "google search console",
+    "hubspot",
+    "notion",
     "canva",
     "figma",
-    "english","project management"
+
+    # Soft Skills
+    "communication",
+    "creative thinking",
+    "project management",
+    "stakeholder management"
 ]
 
 _user_skills_env = os.environ.get("USER_SKILLS", "")
@@ -128,8 +183,16 @@ BLACKLIST_KEYWORDS = [
 
 BOOST_KEYWORDS = {
     "junior": 18, "entry level": 15, "associate": 12,
-    "on-page": 10, "part-time": 8, "contract": 5,
+    "part-time": 8, "contract": 5,
     "remote-first": 8, "async": 5, "flexible": 4,
+    "Creative Strategist": 10,
+    "Content Strategist": 10,
+    "Brand Content Strategist": 9,
+    "Content Marketing Manager": 9,
+    "Employer Branding Specialist": 8,
+    "Brand Strategist": 8,
+    "Social Media Strategist": 7,
+    "Community Marketing Manager": 7,
 }
 
 _SKILL_PATTERNS   = {s: re.compile(r"\b" + re.escape(s) + r"\b", re.I) for s in MY_SKILLS}
